@@ -49,7 +49,11 @@ body {
     font-weight: 500;
 }
 
-
+.flexbox.section {
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 50px 0;
+}
 
 /* HEADER SON BOXES */
 
@@ -106,6 +110,9 @@ p {
 h1 {
     font-size: 40px;
     font-weight: 700;
+}
+
+.title {
     padding-bottom: 50px;
 }
 
@@ -142,16 +149,50 @@ h1 {
 }
 
 
+
+/* MAIN DIRECT CHILD */
+
+.flexbox.column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column > .section {
+    gap: 50px;
+}
+
+.column-left > img {
+    width: inherit;
+}
+
+.column-left {
+    box-sizing: content-box;
+    width: 500px;
+    min-width: 180px;
+}
+
+.column-right {
+    max-width: 300px;
+    min-width: 180px;
+}
+
 .column-left {
 
 }
 
 .column-right {
-    
+    text-align: left;
+}
+
+h1.middle {
+    padding-bottom: 10px;
 }
 
 
 /* BOXES OVERVIEW */
+
+/* HEADER */
 
 body > header > #navbar {
     background-color: #255EE9;
@@ -183,4 +224,12 @@ body > header > #navbar > #hero {
 body > header > #navbar > #hero > #hero_text > .flexbox.buttons_hero > .btn.hero:last-child {
     color: #FFF;
     background-color: #23272A;
+}
+
+
+
+/* MAIN */
+
+body > main > .secion:nth-of-type(2) {
+    
 }
