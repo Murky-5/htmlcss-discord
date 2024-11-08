@@ -32,12 +32,14 @@ body {
     padding: 0 50px;
 } */
 
-
+.section {
+    min-width: 100%;
+}
 
 /* FLEX COMPONENTS */
 
 .flexbox {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
@@ -148,7 +150,17 @@ h1 {
     gap: 10px;
 }
 
+#button_background {
+    padding: 20px 0 0 0;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 20%;
+}
 
+.btn.w-backround {
+    display: inline-block;
+}
 
 /* MAIN DIRECT CHILD */
 
@@ -183,6 +195,14 @@ h1 {
 
 .column-right {
     text-align: left;
+}
+
+.non-flexbox.section {
+    padding: 50px 0;
+}
+
+.non-flexbox.section > .centred-row {
+    text-align: center;
 }
 
 h1.middle {
@@ -233,3 +253,4 @@ body > header > #navbar > #hero > #hero_text > .flexbox.buttons_hero > .btn.hero
 body > main > .section:nth-of-type(2n + 2) {
     background-color: #F6F6F6; 
 }
+
